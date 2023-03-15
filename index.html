@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Filter: Test</title>
+    <link rel="stylesheet" type="text/css" href="uikit-3.16.6/css/uikit.min.css">
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="uikit-3.16.6/js/uikit.min.js"></script>
+    <script src="uikit-3.16.6/js/uikit-icons.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    
+    <div class="container">
+        <main>
+            <div class="category-filter" data-uk-filter="target: .js-filter">
+                <div data-uk-slider="" class="uk-slider">
+                    <div class="uk-position-relative">
+                        <div class="uk-slider-container">
+                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m" style="transform: translate3d(0px, 0px, 0px);">
+                                <li class="selected" data-uk-filter-control="" tabindex="-1"><canvas width="50" height="35"></canvas><div class="uk-position-center"><a href="#" class="news-category-link">All</a></div></li>
+                                <li class="" data-uk-filter-control=".project1" tabindex="-1"><canvas width="50" height="35"></canvas><div class="uk-position-center"><a href="#" class="news-category-link">Project 1</a></div></li>
+                                <li class="" data-uk-filter-control=".project2" tabindex="-1"><canvas width="50" height="35"></canvas><div class="uk-position-center"><a href="#" class="news-category-link">Project 2</a></div></li>
+                                <li class="" data-uk-filter-control=".project3" tabindex="-1"><canvas width="50" height="35"></canvas><div class="uk-position-center"><a href="#" class="news-category-link">Project 3</a></div></li>
+                                <li class="" data-uk-filter-control=".project4" tabindex="-1"><canvas width="50" height="35"></canvas><div class="uk-position-center"><a href="#" class="news-category-link">Project 4</a></div></li>
+                            </ul>
+                        </div>
+                        <a class="uk-position-center-left-out uk-icon uk-slidenav-previous uk-slidenav uk-hidden uk-invisible" href="#" data-uk-slidenav-previous="" data-uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-icon uk-slidenav-next uk-slidenav uk-hidden uk-invisible" href="#" data-uk-slidenav-next="" data-uk-slider-item="next"></a>
+                    </div>
+                </div>
+                <ul class="js-filter uk-child-width-1-2@s uk-child-width-1-3@m uk-grid" data-uk-grid="">
+                    
+                    <li class="project1 uk-grid-margin uk-first-column">
+                        <figure class="news-card">
+                            <div class="square-image" style="background-image: url(img/placeholder_img_1x1.jpg);"><a href=""><img src="img/placeholder_img_1x1.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>project 1</h3>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="project2 uk-first-column">
+                        <figure class="news-card">
+                            <div class="square-image" style="background-image: url(img/placeholder_img_1x1.jpg);"><a href=""><img src="img/placeholder_img_1x1.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>project 2</h3>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="project3 uk-grid-margin uk-first-column">
+                        <figure class="news-card">
+                            <div class="square-image" style="background-image: url(img/placeholder_img_1x1.jpg);"><a href=""><img src="img/placeholder_img_1x1.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>project 3</h3>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="project4 uk-grid-margin">
+                        <figure class="news-card">
+                            <div class="square-image" style="background-image: url(img/placeholder_img_1x1.jpg);"><a href=""><img src="img/placeholder_img_1x1.jpg" alt=""></a>
+                            </div>
+                            <figcaption>
+                                <h3>project 4</h3>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div> 
+        </main>
+    </div>
+    
+<script src="scripts/main.js"></script>
+
+</body>
+</html>

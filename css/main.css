@@ -1,0 +1,178 @@
+*,
+*:before,
+*:after {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+html {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+
+a,
+a:visited,
+a:hover {
+    color: #E5490F;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+/*
+* Container
+*/
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1248px;
+    border-left: 1px solid #E5490F;
+    border-right: 1px solid #E5490F; 
+}
+
+/*
+* Main
+*/
+main {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 25px 15px;
+}
+
+/*
+* Figure
+*/
+figure.default figcaption {
+    padding-top: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #4a4a4a;
+}
+
+/*
+* Figure: news card element
+*/
+figure.news-card figcaption {
+    padding-top: 10px;
+}
+figure.news-card h3 {
+    margin: 0;
+    line-height: 1.2;
+}
+figure.news-card h3 + p {
+    margin-top: 15px;
+}
+figure.news-card h3 a,
+figure.news-card h3 a:visited {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #E5490F;
+}
+figure.news-card p {
+    font-weight: 300;
+}
+figure.news-card p:last-child {
+    margin-bottom: 0;
+}
+p.date {
+    font-size: 16px;
+    margin: 0;
+    color: #676767;
+}
+p.date + h1 {
+    margin-top: 0;
+}
+
+/*
+* Page News: Slider
+*/
+.uk-slider {
+    max-width: 800px;
+}
+.uk-slider a,
+.uk-slider a:hover {
+    text-decoration: none;
+    border-bottom: 0;
+    font-size: 18px;
+    line-height: 25px;
+}
+.uk-slider li a:focus,
+.uk-slider li a:active {
+    background-color: transparent;
+}
+.uk-slider .selected a {
+    font-weight: 500;
+}
+.uk-slider .uk-position-center-left {
+    padding-left: 0;
+}
+.uk-slider .uk-position-center-right {
+    padding-right: 0;
+}
+
+.uk-slider .uk-slidenav {
+    color: #E5490F;
+    padding: 0;
+}
+.uk-slider .uk-slidenav svg {
+    height: 20px;
+    margin-top: -3px;
+}
+.uk-slider .uk-position-center-left-out {
+    margin-right: -4px;
+}
+.uk-slider .uk-position-center-right-out {
+    margin-left: -4px;
+}
+
+/*
+* Page News: Year slider
+*/
+.year-slider {
+    margin-top: 40px;
+}
+
+/*
+* Page News: Category filter
+*/
+.category-filter {
+    border-top: 2px solid #E5490F;
+}
+.category-filter .js-filter {
+    margin-top: 25px;
+}
+
+/*
+* Page News: square image crop
+*/
+.square-image {
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.square-image:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+.square-image img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
